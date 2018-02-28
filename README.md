@@ -1,6 +1,7 @@
 ## Administracion de sistemas GNU/Linux 
+-----------------
 
-Este Curso..
+### Este Curso..
 
 dar una vision de como funcionan las cosas en los sistemas operativos GNU/Linux no solo a nivel de comandos si no que tb internamente
 
