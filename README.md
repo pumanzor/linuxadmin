@@ -10,11 +10,11 @@ dar una vision de como funcionan las cosas en los sistemas operativos GNU/Linux 
 Por que a pesar de que se tiene una infraestructura de proteccion perimetral aun siguen sucediendo estos eventos?
 La respuesta es: siempre mantenerse al tanto
 
-Tambien en este curso
+### Tambien en este curso
 
 En ese modulo se estudiaran los aspectos y caracteristicas principales de los sistemas que operan bajo la plataforma Linux, el obtivo al finalizar este curso es que los alumnos puedan implementar, manejar y operar los diferentes programas y servicios que la plataforma ofrecea nivel de red y seguridad.
 
-Los topicos que incluiremos seran:
+### Los topicos que incluiremos seran:
 
 - Mejores practicas para mantener una red "sana"
 - Sistemas de seguridad perimetral , firewalls
@@ -61,3 +61,7 @@ Si el alumno reprueba un requerimiento tiene derecho a una evaluación recuperat
 La evaluación recuperativa deberá contener todos los indicadores del requerimiento reprobado.
 
 La evaluación recuperativa deberá realizarse en un máximo de una semana después de la instancia original. Al reprobar la unidad de aprendizaje, el alumno tendrá derecho a rendir un examen de repetición de todos los requerimientos de la tarea de la unidad, cuya nota máxima es 4,00
+
+-----------------------
+
+
