@@ -50,7 +50,7 @@ tecnológicas, teniendo en cuenta criterios de eficiencia.
 ### Este curso se compone de:
 
 * 2 pruebas escritas 30% (sin apoyo de libros, paper, internet u cualquier otro medio, solo lapiz y papel)
-* test de salida 10%
+* test de salida 10% (solo se permite el apoyo de lo anotado en clases, no internet, wikipedia, etc)
 * laboratorios 60% (1 semana para preparar informe) (fundamentals, http/https smtp .Proxy dns, firewalls, docker, xen)
 
 El criterio de aprobación en todas las evaluaciones es el 60% y las notas deben ser calculadas de acuerdo a la tabla de equivalencia entre % y notas.
