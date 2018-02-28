@@ -16,30 +16,32 @@ En ese modulo se estudiaran los aspectos y caracteristicas principales de los si
 
 ### Los topicos que incluiremos seran:
 
-- Mejores practicas para mantener una red "sana"
-- Sistemas de seguridad perimetral , firewalls
-- Sistemas de acceso remoto seguro, ssh, vpn
-- Seguridad en DNS
-- Seguridad en correo electronico
-- Botnets y otros fraudes
-- Blockchain y cryptomonedas
-- Seguridad en redes industriales
+- Introduccion y fundamentos
+- Administracion de sistemas
+- Servicios y configuracion
+- Redes en Linux
+- Tolerancia a fallos, HA.
+- Seguridad
+- Contenedores de software (docker, LXC)
+- Virtualizacion.
 
 ----------------
 Requisitos
 
 - Strong IP network skills :)
-- Conocimientos en sistemas operativos modernos
-- Teoria en implementacion basica de sistemas.
+- Conocimientos en hardware computadores
+- Muchas ganas de aprender..
 
 --------------
 Metas y objetivos
 
 Mi Meta:
-proporcionarles las herramientas y conocimientos para comprender y evaluar problemas de seguridad en redes.
+Entregar las herramientas a nivel tecnico para que el alumno pueda desarrollarse a nivel administrador en su entorno de trabajo.
 
-del departamento de postgrado
+Del departamento de postgrado
 
+Analizar las bases de administración de servicios en sistemas Linux y la configuración de ellos en la evaluación de plataformas
+tecnológicas, teniendo en cuenta criterios de eficiencia.
 
 ###Calendario
 --------
