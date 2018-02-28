@@ -35,7 +35,7 @@ Requisitos
 Metas y objetivos
 
 Mi Meta:
-Entregar las herramientas a nivel tecnico para que el alumno pueda desarrollarse a nivel administrador en su entorno de trabajo.
+Entregar las herramientas a nivel tecnico para que el alumno pueda aportar y desarrollarse a nivel "Linux administrator" en su entorno de trabajo.
 
 Del departamento de postgrado
 
