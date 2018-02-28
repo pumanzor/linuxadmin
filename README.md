@@ -1,7 +1,7 @@
 ## Administracion de sistemas GNU/Linux 
 -----------------
 
-https://github.com/pumanzor/linuxadmin/blob/master/imgs/win7linux.png
+(https://github.com/pumanzor/linuxadmin/blob/master/imgs/win7linux.png)
 
 ### Este Curso..
 
