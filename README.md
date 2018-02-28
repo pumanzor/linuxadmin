@@ -1,6 +1,8 @@
 ## Administracion de sistemas GNU/Linux 
 -----------------
 
+https://github.com/pumanzor/linuxadmin/blob/master/imgs/win7linux.png
+
 ### Este Curso..
 
 dar una vision de como funcionan las cosas en los sistemas operativos GNU/Linux no solo a nivel de comandos si no que tb internamente
