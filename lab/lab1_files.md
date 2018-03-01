@@ -4,7 +4,7 @@ ls /bin
 #### 2. Mostrar que tipo de archivo es /bin/cat, /etc/passwd ay /usr/bin/passwd.
 file /bin/cat /etc/passwd /usr/bin/passwd
 
-#### 3a. Bajar el archivo image.jpg y Linux.pdf desde http://192.168.200.250/image.jpg (wget http://192.168.200.250/files/linus.jpg y wget http://192.168.200.250/files/whitepaper.pdf)
+#### 3a. Bajar el archivo image.jpg y Linux.pdf desde http://192.168.200.250/files/
 
 wget http://192.168.200.250/files/linus.jpg
 wget http://192.168.200.250/files/linus.png
