@@ -1,49 +1,58 @@
-1. List the files in the /bin directory
-
+#### 1. Ver los archivos del directorio /bin
 ls /bin
-2. Display the type of file of /bin/cat, /etc/passwd and /usr/bin/passwd.
 
+#### 2. Mostrar que tipo de archivo es /bin/cat, /etc/passwd ay /usr/bin/passwd.
 file /bin/cat /etc/passwd /usr/bin/passwd
-3a. Download wolf.jpg and LinuxFun.pdf from http://linux-training.be (wget http://linux-training.be/files/studentfiles/wolf.jpg and wget http://linux-training.be/files/books/LinuxFun.pdf)
 
-wget http://linux-training.be/files/studentfiles/wolf.jpg
-wget http://linux-training.be/files/studentfiles/wolf.png
-wget http://linux-training.be/files/books/LinuxFun.pdf
-3b. Display the type of file of wolf.jpg and LinuxFun.pdf
+### 3a. Bajar el archivo image.jpg y Linux.pdf desde http://192.168.200.250/image.jpg (wget http://192.168.200.250/files/linus.jpg y wget http://192.168.200.250/files/whitepaper.pdf)
 
-file wolf.jpg LinuxFun.pdf
-3c. Rename wolf.jpg to wolf.pdf (use mv).
+wget http://192.168.200.250/files/linus.jpg
+wget http://192.168.200.250/files/linus.png
+wget http://192.168.200.250/files/whitepaper.pdf
 
-mv wolf.jpg wolf.pdf
-3d. Display the type of file of wolf.pdf and LinuxFun.pdf.
+#### 3b. Mostrar el tipo de archivo de linus.jpg and whitepaper.pdf
 
-file wolf.pdf LinuxFun.pdf
-4. Create a directory ~/touched and enter it.
+file linus.jpg whitepaper.pdf
 
-mkdir ~/touched ; cd ~/touched
-5. Create the files today.txt and yesterday.txt in touched.
+#### 3c. Renombre linus.jpg a linus.pdf (use mv).
+
+mv linus.jpg linus.pdf
+
+#### 3d. Mostrar el tipo de archivo de linus.pdf y whitepaper.pdf
+
+file linus.pdf whitepaper.pdf
+
+#### 4. Crear el directorio ~/lab1 e ingrese en el
+
+mkdir ~/lab1 ; cd ~/lab1
+
+#### 5. Crear los arvhivos today.txt y yesterday.txt en lab1.
 
 touch today.txt yesterday.txt
-6. Change the date on yesterday.txt to match yesterday's date.
 
-touch -t 200810251405 yesterday.txt (substitute 20081025 with yesterday)
-7. Copy yesterday.txt to copy.yesterday.txt
+#### 6. Cambie la fecha de yesterday.txt que coincida con la fecha de ayer.
+
+touch -t 201803011205 yesterday.txt (sustituya con la fecha de ayer)
+
+#### 7. Copiar yesterday.txt como copy.yesterday.txt
 
 cp yesterday.txt copy.yesterday.txt
-8. Rename copy.yesterday.txt to kim
+
+#### 8. Renombrar copy.yesterday.txt como kim
 
 mv copy.yesterday.txt kim
-9. Create a directory called ~/testbackup and copy all files from ~/touched into it.
 
-mkdir ~/testbackup ; cp -r ~/touched ~/testbackup/ 
-10. Use one command to remove the directory ~/testbackup and all files into it.
+#### 9. Crear el directorio con el nombre ~/testbackup y copie todos los archivos desde ~/lab1 dentro de el.
+
+mkdir ~/testbackup ; cp -r ~/lab1 ~/testbackup/ 
+
+#### 10. Use un comando para eliminar el directorio ~/testbackup y todos los archivos que se encuentran dentro.
 
 rm -rf ~/testbackup 
-11. Create a directory ~/etcbackup and copy all *.conf files from /etc into it. Did you include all subdirectories of /etc ?
+
+#### 11. Crear un directorio ~/etcbackup y copie todos los archivos *.conf desde /etc dentro de el
 
 cp -r /etc/*.conf ~/etcbackup
-Only *.conf files that are directly in /etc/ are copied.
-12. Use rename to rename all *.conf files to *.backup . (if you have more than one distro available, try it on all!)
 
-On RHEL: touch 1.conf 2.conf ; rename conf backup *.conf
-On Debian: touch 1.conf 2.conf ; rename 's/conf/backup/' *.conf
+Only *.conf files that are directly in /etc/ are copied.
+
