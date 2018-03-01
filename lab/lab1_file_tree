@@ -29,41 +29,16 @@ puede explicar la funcionalidad del archivo /dev/random ?
 
 /dev/random actua como un generador de numeros aleatorios en Linux.
 
-5. Issue the following two commands, and look at the first character of each output line.
+#### 5. Use el comando cat o more para ver el contenido de /etc/hosts y /etc/resolv.conf.
+Para que sirven estos 2 archivos?
 
-ls -l /dev/sd* /dev/hd*
-ls -l /dev/tty* /dev/input/mou*
-The first ls will show block(b) devices, the second ls shows character(c) devices. Can you tell the difference between block and character devices ?
+/etc/hosts contiene nombre de hosts con sus direcciones IP
+/etc/resolv.conf deberia contener la direccion ip de los servidores dns.
 
-Block devices are always written to (or read from) in blocks. For hard disks, blocks of 512 bytes are common. Character devices act as a stream of characters (or bytes). Mouse and keyboard are typical character devices.
+#### 6. Ver el contenido del archivo /proc/cpuinfo. Cual es el modelo del procesador?
 
-6. Use cat to display /etc/hosts and /etc/resolv.conf. What is your idea about the purpose of these files ?
 
-/etc/hosts contains hostnames with their ip address
-/etc/resolv.conf should contain the ip address of a DNS name server.
-7. Are there any files in /etc/skel/ ? Check also for hidden files.
+#### 7. Puede ud ingresar al directorio /root como usuario normal?
 
-Issue "ls -al /etc/skel/". Yes, there should be hidden files there.
-8. Display /proc/cpuinfo. On what architecture is your Linux running ?
 
-The file should contain at least one line with Intel or other cpu.
-9. Display /proc/interrupts. What is the size of this file ? Where is this file stored ?
 
-The size is zero, yet the file contains data. It is not stored anywhere because /proc is a virtual file system that allows you to talk with the kernel. (If you answered "stored in RAM-memory, that is also correct...).
-
-10. Can you enter the /root directory ? Are there (hidden) files ?
-
-Try "cd /root". The /root directory is not accessible for normal users on most modern Linux systems.
-11. Are ifconfig, fdisk, parted, shutdown and grub-install present in /sbin ? Why are these binaries in /sbin and not in /bin ?
-
-Because those files are only meant for system administrators.
-12. Is /var/log a file or a directory ? What about /var/spool ?
-
-Both are directories.
-13. Open two command prompts (Ctrl-Shift-T in gnome-terminal) or terminals (Ctrl-Alt-F1, Ctrl-Alt-F2, ...) and issue the who am i in both. Then try to echo a word from one terminal to the other.
-
-tty-terminal: echo Hello > /dev/tty1
-pts-terminal: echo Hello > /dev/pts/1
-14. Read the man page of random and explain the difference between /dev/random and /dev/urandom.
-
-man 4 random
