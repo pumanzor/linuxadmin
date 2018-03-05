@@ -21,10 +21,21 @@
 
     $cat < archivo2.txt
     
-6.- Cuente los caracteres de archivo2.txt con el comando wc
+6.- Muestre cuantas lineas posee el archivo2.txt con el comando wc
 
-    $wc -c archivo2.txt
+    $wc -l archivo2.txt
     
+7.- En una sola linea muestre cuantos usuarios poseen el shell bash desde archivo2.txt
+
+
+   $ cat archivo2.txt | grep bash | wc -l
+    
+8.- Crear archivo3.txt filtrando solo los usuarios que tengan el shell false y comprimir el archivo
+
+   $grep false archivo2.txt |gzip > archivo4.gz
+   $cat archivo4
+
+
     
     
     
