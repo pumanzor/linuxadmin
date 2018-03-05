@@ -1,0 +1,30 @@
+1.- Con el comando "echo" crear un archivo y poner contenido dentro de el
+
+    $echo "hola Mundo" > archivo1.txt
+    $more archivo1.txt
+    
+2.- Use el mismo comando ahora para añadir texto al final
+
+    $echo "curso de linux" >> archivo1.txt
+    
+3.- Elimine el contenido del archivo con >:
+
+    $>archivo1.txt
+    $cat archivo1.txt
+
+4.- Copie el contenido del archivo /etc/passwd en un nuevo archivo con el comando cat:
+
+    $cat /etc/passwd > archivo2.txt
+    $more archivo2.txt
+    
+5.- Envie el contenido del archivo2 hacia el comando cat
+
+    $cat < archivo2.txt
+    
+6.- Cuente los caracteres de archivo2.txt con el comando wc
+
+    $wc -c archivo2.txt
+    
+    
+    
+    
