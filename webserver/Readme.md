@@ -8,9 +8,18 @@ Un cliente (browser, cliente modo texto, etc) conecta a un servidor con el proto
 
 El URL-path puede representar cualquier numero de cosas en el servidor. Puede ser un archivo (ej. como index.html) un handler (como  server-status) o algun tipo de programa (como index.php).
 
-El servidor enviara una respuesta consistente en el codigo de status (status code) y opcionalmente un response body. El status code indica si el request tuvo exito y si no que tipo de condicion de error hubo. Este le dice al cliente que deberia hacer con la respuesta.
+El servidor enviara una respuesta consistente en el codigo de status (status code) y opcionalmente un response body. El status code indica si el request tuvo exito y si no que tipo de condicion de error que hubo. Este le dice al cliente que deberia hacer con la respuesta.
 
-El detalle de las transacciones y algun error de condicion son escritas en los log files.
+El detalle de las transacciones y de los error de condicion son escritas en los log files.
+
+
+Para conectarse a un servidor, el cliente primero tendrá que resolver el nombre del servidor en una dirección IP: la ubicación en Internet donde reside el servidor. Por lo tanto, para que su servidor web sea accesible, es necesario que el nombre del servidor esté en DNS.
+
+Más de un nombre de host puede apuntar a la misma dirección IP y más de una dirección IP se puede conectar al mismo servidor físico. Por lo tanto, puede ejecutar más de un sitio web en el mismo servidor físico o maquina virtual, utilizando una función llamada hosts virtuales.
+
+Si está probando un servidor que no es accesible por Internet, puede poner nombres de host en su archivo de hosts para hacer una resolución local. Por ejemplo, es posible que desee colocar un registro en su archivo de hosts para asignar una solicitud de www.example.com a su sistema local, con fines de prueba. Esta entrada se vería así:
+
+    127.0.0.1 www.example.com
 
 
 
