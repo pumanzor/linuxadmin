@@ -1,6 +1,6 @@
-### Servicios Web
+## Servicios Web HTTP
 
-como funciona.
+### como funciona Apache2
 
 Las direcciones en la web se encuentran expresadas con URL - Uniform Resource Locators - quien especifican el protocolo (e.g. http), un nombre de servidor (e.g. www.apache.org), y una URL-path (e.g. /docs/current/getting-started.html) y posiblemente una query string (e.g. ?arg=value) utilizada para pasar argumento adicionales al server.
 
