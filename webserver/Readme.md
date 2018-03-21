@@ -64,14 +64,14 @@ Si se va a aplicar solo a un directorio particular, debe ir dentro de una secci�
 Además de los archivos de configuración principal, ciertas directivas pueden ir en archivos .htaccess ubicados en los directorios de contenido. Los archivos .htaccess son principalmente para personas que no tienen acceso a los archivos de configuración del servidor principal.
 
 
-Instalacion
+### Instalacion
 
-en Debian
+#### en Debian / Ubuntu / Kali
 
     apt-get install apache2
     
 
-Configuraciones.
+### Configuraciones.
 
 Los archivos de configuracion de apache2 en DEbian se encuentran en el directorio
 
