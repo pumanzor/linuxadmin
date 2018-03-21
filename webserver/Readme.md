@@ -1,5 +1,29 @@
 ## Servicios Web HTTP
 
+### que es Apache web server
+
+#### The Apache HTTP Server
+
+- is a powerful, flexible, HTTP/1.1 compliant web server
+- implements the latest protocols, including HTTP/1.1 (RFC2616)
+- is highly configurable and extensible with third-party modules
+- can be customised by writing 'modules' using the Apache module API
+- provides full source code and comes with an unrestrictive license
+- runs on Windows 2000, Netware 5.x and above, OS/2, and most versions of Unix, as well as several other operating systems
+- is actively being developed
+- encourages user feedback through new ideas, bug reports and patches
+- implements many frequently requested features, including:
+  - DBM databases as well, as relational databases and LDAP for authentication
+  - allows you to easily set up password-protected pages with enormous numbers of authorized users, without bogging down the server.
+  - Customized responses to errors and problems
+  - Allows you to set up files, or even CGI scripts, which are returned by the server in response to errors and problems, e.g.    setup a script to intercept 500 Server Errors and perform on-the-fly diagnostics for both users and yourself.
+  - Multiple DirectoryIndex directives - Allows you to say DirectoryIndex index.html index.cgi, which instructs the server to either send back index.html or run index.cgi when a directory URL is requested, whichever it finds in the directory.
+
+  - Unlimited flexible URL rewriting and aliasing - Apache has no fixed limit on the numbers of Aliases and Redirects which may be declared in the config files. In addition, a powerful rewriting engine can be used to solve most URL manipulation problems.
+  - Content negotiation - i.e. the ability to automatically serve clients of varying sophistication and HTML level compliance, with documents which offer the best representation of information that the client is capable of accepting.
+  - Virtual Hosts - Allows the server to distinguish between requests made to different IP addresses or names (mapped to the same machine). Apache also offers dynamically configurable mass-virtual hosting.
+  - Configurable Reliable Piped Logs - You can configure Apache to generate logs in the format that you want. In addition, on most Unix architectures, Apache can send log files to a pipe, allowing for log rotation, hit filtering, real-time splitting of     - multiple vhosts into separate logs, and asynchronous DNS resolving on the fly.
+
 ### como funciona Apache2
 
 Las direcciones en la web se encuentran expresadas con URL - Uniform Resource Locators - quien especifican el protocolo (e.g. http), un nombre de servidor (e.g. www.apache.org), y una URL-path (e.g. /docs/current/getting-started.html) y posiblemente una query string (e.g. ?arg=value) utilizada para pasar argumento adicionales al server.
