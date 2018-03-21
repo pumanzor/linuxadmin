@@ -125,6 +125,7 @@ dentro de este directorio se pueden apreciar varios archvos de configuracion del
 * Códigos con formato 4xx: Errores causados por el cliente. Indica que ha habido un error en el procesado de la petición a causa de que el cliente ha hecho algo mal.
 * Códigos con formato 5xx: Errores causados por el servidor. Indica que ha habido un error en el procesado de la petición a causa de un fallo en el servidor.
 
+------
 
     1×× Informational
     100 Continue
