@@ -1,6 +1,6 @@
 ### Servicios Web
 
-Modelo cliente servidor, 
+como funciona.
 
 Las direcciones en la web se encuentran expresadas con URL - Uniform Resource Locators - quien especifican el protocolo (e.g. http), un nombre de servidor (e.g. www.apache.org), y una URL-path (e.g. /docs/current/getting-started.html) y posiblemente una query string (e.g. ?arg=value) utilizada para pasar argumento adicionales al server.
 
@@ -20,6 +20,49 @@ Más de un nombre de host puede apuntar a la misma dirección IP y más de una d
 Si está probando un servidor que no es accesible por Internet, puede poner nombres de host en su archivo de hosts para hacer una resolución local. Por ejemplo, es posible que desee colocar un registro en su archivo de hosts para asignar una solicitud de www.example.com a su sistema local, con fines de prueba. Esta entrada se vería así:
 
     127.0.0.1 www.example.com
+
+
+El archivo de hosts probablemente en linux se encuentre en /etc/hosts o en windows en  C:\Windows\system32\drivers\etc\hosts
+
+
+El Servidor HTTP Apache se configura a través de archivos de texto simples. Estos archivos pueden ubicarse en una variedad de lugares, dependiendo de cómo instaló exactamente el servidor o de la distribucion de Linux que utiliza. Si instaló httpd desde las fuentes, la ubicación predeterminada de los archivos de configuración es /usr/local/apache2/conf. 
+
+El archivo de configuración predeterminado generalmente se llama httpd.conf. Esto también puede variar en las distribuciones de terceros.
+
+La configuración se divide frecuentemente en varios archivos más pequeños, para facilitar la administración. Estos archivos se cargan a través de la directiva "Include". Los nombres o ubicaciones de estos subarchivos no son mágicos y pueden variar mucho de una instalación a otra. Organice y subdivida estos archivos para que tenga más sentido para usted. Si la disposición de archivos que tiene de forma predeterminada no tiene sentido para usted, puede reorganizarla a su gusto.
+
+El servidor se configura colocando directivas de configuración en estos archivos de configuración. Una directiva es una palabra clave seguida de uno o más argumentos que establecen su valor.
+
+La pregunta "¿Dónde debería poner esa directiva?" generalmente se responde al considerar dónde desea que una directiva sea efectiva. Si se trata de una configuración global, debe aparecer en el archivo de configuración, fuera de cualquier <Directory>, <location>, <VirtualHost> u otra sección. 
+    
+Si se va a aplicar solo a un directorio particular, debe ir dentro de una sección <Directory> que hace referencia a ese directorio, y así sucesivamente.
+
+Además de los archivos de configuración principal, ciertas directivas pueden ir en archivos .htaccess ubicados en los directorios de contenido. Los archivos .htaccess son principalmente para personas que no tienen acceso a los archivos de configuración del servidor principal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
