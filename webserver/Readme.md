@@ -1,5 +1,21 @@
 ### Servicios Web
 
+Modelo cliente servidor, 
+
+Las direcciones en la web se encuentran expresadas con URL - Uniform Resource Locators - quien especifican el protocolo (e.g. http), un nombre de servidor (e.g. www.apache.org), y una URL-path (e.g. /docs/current/getting-started.html) y posiblemente una query string (e.g. ?arg=value) utilizada para pasar argumento adicionales al server.
+
+Un cliente (browser, cliente modo texto, etc) conecta a un servidor con el protocolo especificado y hace un request por un recurso utilizando el URL-path.
+
+El URL-path puede representar cualquier numero de cosas en el servidor. Puede ser un archivo (ej. como index.html) un handler (como  server-status) o algun tipo de programa (como index.php).
+
+El servidor enviara una respuesta consistente en el codigo de status (status code) y opcionalmente un response body. El status code indica si el request tuvo exito y si no que tipo de condicion de error hubo. Este le dice al cliente que deberia hacer con la respuesta.
+
+El detalle de las transacciones y algun error de condicion son escritas en los log files.
+
+
+
+### Status codes
+
 
 
     1×× Informational
@@ -8,7 +24,7 @@
     102 Processing
 
     2×× Success
-    ### 200 OK
+    200 OK
     201 Created
     202 Accepted
     203 Non-authoritative Information
