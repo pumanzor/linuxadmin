@@ -51,11 +51,11 @@ Even fishy combinations are accepted by chmod.
     -rwxrw-r-- 1 paul paul 0 2007-02-07 22:34 permissions.txt
 
 
-setting octal permissions
+### setting octal permissions
 
 Most Unix administrators will use the old school octal system to talk about and set permissions. Look at the triplet bitwise, equating r to 4, w to 2, and x to 1.
 
-Octal permissions
+### Octal permissions
 
     binary	octal	permission
      000	0	---
@@ -67,21 +67,9 @@ Octal permissions
      110	6	rw-
      111	7	rwx
 
-This makes 777 equal to rwxrwxrwx and by the same logic, 654 mean rw-r-xr-- . The chmod command will accept these numbers.
-
-    paul@laika:~/perms$ chmod 777 permissions.txt 
-    paul@laika:~/perms$ ls -l permissions.txt 
-    -rwxrwxrwx 1 paul paul 0 2007-02-07 22:34 permissions.txt
-    paul@laika:~/perms$ chmod 664 permissions.txt 
-    paul@laika:~/perms$ ls -l permissions.txt 
-    -rw-rw-r-- 1 paul paul 0 2007-02-07 22:34 permissions.txt
-    paul@laika:~/perms$ chmod 750 permissions.txt 
-    paul@laika:~/perms$ ls -l permissions.txt 
-    -rwxr-x--- 1 paul paul 0 2007-02-07 22:34 permissions.txt
 
 
-
-## Los permisos
+## Permisos
 
 Objetivo: modificar los permisos y comprender el mecanismo de los permisos y límites de los usuarios.
 1. Modifique los propietarios y grupos de /DATOS en seb:users.
