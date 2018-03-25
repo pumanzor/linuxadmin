@@ -7,11 +7,13 @@ La web es un sistema masivo de información cliente / servidor distribuido como 
 
 ![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/TheWeb.png)
 
+-----
 
 Muchas aplicaciones se ejecutan de forma simultánea en la Web, como navegación web, correo electrónico, transferencia de archivos, transmisión de audio y video, etc. 
 
 Para que se produzca una comunicación adecuada entre el cliente y el servidor, estas aplicaciones deben acordar un protocolo específico de nivel de aplicación, como HTTP, FTP, SMTP, POP, etc.
 
+------
 
 HTTP (Protocolo de transferencia de hipertexto) es quizás el protocolo de aplicación más popular utilizado en Internet (o The WEB).
 
@@ -20,15 +22,43 @@ HTTP es un protocolo de solicitud-respuesta cliente-servidor asimétrico como se
 ![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/HTTP.png)
 
 
-HTTP es un protocolo sin estado stateless. En otras palabras, la solicitud actual no sabe qué se ha hecho en las solicitudes anteriores.
+> HTTP es un protocolo sin estado stateless. En otras palabras, la solicitud actual no sabe qué se ha hecho en las solicitudes anteriores.
 
-HTTP permite negociar el tipo de datos y la representación, para permitir que los sistemas se construyan independientemente de los datos que se transfieren.
+> HTTP permite negociar el tipo de datos y la representación, para permitir que los sistemas se construyan independientemente de los datos que se transfieren.
 
-Citando del RFC 2616: "El protocolo de transferencia de hipertexto (HTTP) es un protocolo de nivel de aplicación para sistemas de información hipermedia distribuidos, colaborativos. Es un protocolo genérico, sin estado, que puede usarse para muchas tareas más allá de su uso para el hipertexto, tales como servidores de nombres y sistemas de administración de objetos distribuidos, a través de la extensión de sus métodos de solicitud, códigos de error y encabezados".
+> Citando del RFC 2616: "El protocolo de transferencia de hipertexto (HTTP) es un protocolo de nivel de aplicación para sistemas de información hipermedia distribuidos, colaborativos. Es un protocolo genérico, sin estado, que puede usarse para muchas tareas más allá de su uso para el hipertexto, tales como servidores de nombres y sistemas de administración de objetos distribuidos, a través de la extensión de sus métodos de solicitud, códigos de error y encabezados".
+
+---------------
 
 Cada vez que se escribre una URL desde su navegador para obtener un recurso web usando HTTP, p. http://www.nowhere123.com/index.html, el navegador convierte la URL en un mensaje de solicitud y lo envía al servidor HTTP. El servidor HTTP interpreta el mensaje de solicitud y le devuelve un mensaje de respuesta apropiado, que es el recurso que solicitó o un mensaje de error. Este proceso se ilustra a continuación:
 
 ![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/HTTP_Steps.png)
+
+--------------
+
+Uniform Resource Locator (URL)
+
+Una URL (Localizador Uniforme de Recursos) se utiliza para identificar un recurso de manera única en la web. La URL tiene la siguiente sintaxis:
+
+protocolo://nombre de host:puerto/ruta-y-nombre-archivo
+
+Hay 4 partes en una URL:
+
+* Protocolo: el protocolo de nivel de aplicación utilizado por el cliente y el servidor, por ejemplo, HTTP, FTP y telnet.
+* Nombre de host: el nombre de dominio DNS (por ejemplo, www.nowhere123.com) o la dirección IP (por ejemplo, 192.128.1.2) del servidor.
+* Puerto: el número de puerto TCP que el servidor está escuchando para las solicitudes entrantes de los clientes.
+* Ruta de acceso y nombre de archivo: el nombre y la ubicación del recurso solicitado, en el directorio base del documento del servidor.
+
+Por ejemplo, en la URL http://www.nowhere123.com/docs/index.html, el protocolo de comunicación es HTTP; el nombre de host es www.nowhere123.com. El número de puerto no se especificó en la URL y toma el número predeterminado, que es el puerto TCP 80 para HTTP. La ruta y el nombre del archivo para el recurso que se ubicará es "/docs/index.html".
+
+Otros ejemplos de URL son:
+
+    ftp://www.ftp.org/docs/test.txt
+    mailto: user@test101.com
+    noticias: soc.culture.Singapore
+    telnet://www.nowhere123.com/
+
+
 
 
 ### que es Apache web server
