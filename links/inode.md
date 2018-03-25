@@ -6,7 +6,8 @@ What is an inode in Linux?
 Every Linux file or directory (from a technical point of view, there’s no real difference between them) has an inode, and this inode contains all of the file’s metadata (that is, all the administrative data needed to read a file is stored in its inode). For example, the inode contains a list of all the blocks in which a file is stored, the owner information for that file, permissions and all other attributes that are set for the file. In a sense, you could say that a file really is the inode, and names are attached to these inodes to make it easier for humans to work with them.
 
 Inode limits is per filesystem and decided at filesystem creation time. Maximum directory size is filesystem dependent and thus the exact limit differs. For better performance make your directories smaller by sorting files into subdirectories rather having one large directory.
-1. What is an inode number?
+
+#### 1. What is an inode number?
 
 An inode is an entry in inode table, containing information ( the metadata ) about a regular file and directory. An inode is a data structure on a traditional Unix-style file system such as ext3 or ext4. Linux extended filesystems such as ext2 or ext3 maintain an array of these inodes: the inode table. This table contains list of all files in that filesystem. The individual inodes in inode table have a unique number (unique to that filesystem), the inode number. Diving deep into the inode, an inode stores:
 
