@@ -1,3 +1,5 @@
+### What is an i-node
+
 Everything is a file, Linux and other Unix-like Operating systems maintain a consistency by treating everything as a file (even the hardware devices). The keyboard, mouse, printers, monitor, hard disk, processes, even the directories are treated as files in Linux. The regular files contain data such as text (text files), music, videos (multimedia files) etc. Set aside the regular data, there are some other data about these files, such as their size, ownership, permissions, timestamp etc. This meta-data about a file is managed with a data structure known as an inode (index node).
 What is an inode in Linux?
 
@@ -250,4 +252,3 @@ Conclusion
 Every Linux file has an inode, and the inode contains all properties of the file, but not the file name. A symbolic link is like a shortcut which points to the original file while a hard link is like a copy of the file that is synchronized continuously. There is no difference between the original file and the hard link; they both refer to the same. You can do some manipulations on inode.
 
 
-https://linoxide.com/linux-command/linux-inode/
