@@ -1,5 +1,36 @@
 ## Servicios Web HTTP
 
+#### Contexto
+
+La web es un sistema masivo de información cliente / servidor distribuido como se muestra en el siguiente diagrama.
+
+
+![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/TheWeb.png)
+
+
+Muchas aplicaciones se ejecutan de forma simultánea en la Web, como navegación web, correo electrónico, transferencia de archivos, transmisión de audio y video, etc. 
+
+Para que se produzca una comunicación adecuada entre el cliente y el servidor, estas aplicaciones deben acordar un protocolo específico de nivel de aplicación, como HTTP, FTP, SMTP, POP, etc.
+
+
+HTTP (Protocolo de transferencia de hipertexto) es quizás el protocolo de aplicación más popular utilizado en Internet (o The WEB).
+
+HTTP es un protocolo de solicitud-respuesta cliente-servidor asimétrico como se ilustra en la imagen siguiente. Un cliente HTTP envía un mensaje de solicitud a un servidor HTTP. El servidor, a su vez, devuelve un mensaje de respuesta. En otras palabras, HTTP es un protocolo de extracción, el cliente extrae información del servidor (en lugar de que el servidor envíe información al cliente).
+
+![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/HTTP.png)
+
+
+HTTP es un protocolo sin estado stateless. En otras palabras, la solicitud actual no sabe qué se ha hecho en las solicitudes anteriores.
+
+HTTP permite negociar el tipo de datos y la representación, para permitir que los sistemas se construyan independientemente de los datos que se transfieren.
+
+Citando del RFC 2616: "El protocolo de transferencia de hipertexto (HTTP) es un protocolo de nivel de aplicación para sistemas de información hipermedia distribuidos, colaborativos. Es un protocolo genérico, sin estado, que puede usarse para muchas tareas más allá de su uso para el hipertexto, tales como servidores de nombres y sistemas de administración de objetos distribuidos, a través de la extensión de sus métodos de solicitud, códigos de error y encabezados".
+
+Cada vez que se escribre una URL desde su navegador para obtener un recurso web usando HTTP, p. http://www.nowhere123.com/index.html, el navegador convierte la URL en un mensaje de solicitud y lo envía al servidor HTTP. El servidor HTTP interpreta el mensaje de solicitud y le devuelve un mensaje de respuesta apropiado, que es el recurso que solicitó o un mensaje de error. Este proceso se ilustra a continuación:
+
+![alt text](https://github.com/pumanzor/linuxadmin/blob/master/imgs/HTTP_Steps.png)
+
+
 ### que es Apache web server
 
 #### The Apache HTTP Server
