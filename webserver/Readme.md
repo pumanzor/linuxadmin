@@ -36,7 +36,7 @@ Cada vez que se escribre una URL desde su navegador para obtener un recurso web 
 
 --------------
 
-Uniform Resource Locator (URL)
+### Uniform Resource Locator (URL)
 
 Una URL (Localizador Uniforme de Recursos) se utiliza para identificar un recurso de manera única en la web. La URL tiene la siguiente sintaxis:
 
@@ -57,6 +57,38 @@ Otros ejemplos de URL son:
     mailto: user@test101.com
     noticias: soc.culture.Singapore
     telnet://www.nowhere123.com/
+
+----------------
+
+### Protocolo HTTP
+
+Como se mencionó, cada vez que ingresa una URL en el cuadro de dirección del navegador, el navegador traduce la URL en un mensaje de solicitud de acuerdo con el protocolo especificado; y envía el mensaje de solicitud al servidor.
+
+Por ejemplo, el navegador tradujo la URL http://www.nowhere123.com/doc/index.html en el siguiente mensaje de solicitud:
+
+    GET /docs/index.html HTTP/1.1
+    Host: www.nowhere123.com
+    Accept: image/gif, image/jpeg, */*
+    Accept-Language: en-us
+    Accept-Encoding: gzip, deflate
+    User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+    (blank line)
+
+Cuando este mensaje de solicitud llega al servidor, el servidor puede realizar una de estas acciones:
+
+* El servidor interpreta la solicitud recibida, asigna la solicitud a un archivo en el directorio de documentos del servidor y devuelve el archivo solicitado al cliente.
+
+* El servidor interpreta la solicitud recibida, asigna la solicitud a un programa guardado en el servidor, ejecuta el programa y devuelve la salida del programa al cliente.
+
+* La solicitud no puede ser satisfecha, el servidor devuelve un mensaje de error.
+
+
+
+
+
+
+
+
 
 
 
