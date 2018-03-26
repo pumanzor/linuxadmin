@@ -278,7 +278,7 @@ dentro de este directorio se pueden apreciar varios archvos de configuracion del
     444 Connection Closed Without Response
     451 Unavailable For Legal Reasons
     499 Client Closed Request
-
+   
     5×× Server Error
     500 Internal Server Error
     501 Not Implemented
@@ -292,3 +292,21 @@ dentro de este directorio se pueden apreciar varios archvos de configuracion del
     510 Not Extended
     511 Network Authentication Required
     599 Network Connect Timeout Error
+    
+-------------------
+
+#### Logformat
+
+LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
+
+    %h is the remote host (ie the client IP) 
+    %l is the identity of the user determined by identd (not usually used since not reliable) 
+    %u is the user name determined by HTTP authentication 
+    %t is the time the request was received. 
+    %r is the request line from the client. ("GET / HTTP/1.0") 
+    %>s is the status code sent from the server to the client (200, 404 etc.) 
+    %O is the size of the response to the client (in bytes) 
+    Referer is the Referer header of the HTTP request (containing the URL of the page from which this request was initiated) if any is present, and "-" otherwise. 
+    User-agent is the browser identification string. 
+
+   
